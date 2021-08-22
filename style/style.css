@@ -1,0 +1,19 @@
+*{
+    background-color: rgb(218, 184, 195);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 25px;
+    text-align: center;
+}
+
+#title{
+    font-size: 50px;
+}
+
+#description{
+    font-size: 15px;
+    margin: 0;
+}
+#survey-form{
+    padding: 20px;
+    columns: 1;
+}
