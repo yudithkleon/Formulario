@@ -22,18 +22,7 @@
         box-shadow:5px 50px 90px rgb(214, 39, 106);
  }
 
- .otro_formulario{
-    width:800px;
-    background-image:url("https://i.pinimg.com/564x/c3/8b/d6/c38bd6776781d155b18d59e50d61ba89.jpg");
-    background-color:pink;
-    padding:20px;
-    margin:auto;
-    margin-top:100px;
-    margin-bottom:100px;
-    border-radius:50px;
-    color:rgb(10, 10, 10);
-    box-shadow:5px 50px 90px rgb(214, 39, 106);   
- }
+
 input{
 background-color: transparent;
 border-color: violet;
