@@ -9,75 +9,82 @@
     <link rel="stylesheet" href="./style/style.css">
 
 </head>
-<body>
-    <h1 id="title"> Ficha Tecnica de Uñas</h1>
 
+<body>
+
+    <h1 id="title"> Ficha Tecnica de Uñas</h1>
     <p id="description">Esta contiene informacion detallada de el estado actual de sus manos y del servicio que se le
         realizara</p>
 
     <form id="survey-form">
-
-        <label  id="name-label">Nombre</label>
-        <input type="text" id="name">
-        <label id="email-label" .>Correo Electronico</label>
-        <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
-        <label  id="number-label" .>Numero de Telefono</label>
-        <input type="text" id="tlef">
-        <h2>Servivio a Realizar</h2>
+        <h2> Datos Personales</h2>
+        <label id="name-label">Nombre</label><br>
+        <input type="text" id="name" placeholder="Ingrese Nombre" required pattern="[A-Za-z0-9]{5,40}" ><br>
+        <label id="email-label" .>Correo Electronico</label><br>
+        <input type="email" id="email" pattern=".+@globex\.com" size="30" required placeholder="Email nombre@extension.com"><br>
+        <label id="number-label" .>Edad</label><br>
+        <input type="number" id="number" placeholder="Ingrese Edad" min="0" max= "110" required="debe Ingresar Edad"><br>
+        
         <div class="servicio">
+            <h3>Servicio a Realizar</h3>
             <select name="servicio" id="dropdown">
-                <option disabled selected>Elige tu servicio</option>
-                <option value=maniTradicional" name="servicio">Manicure Tradicional</option>
+                <option disabled selected value>
+                 Elige tu servicio</option>
+                <option value="maniTradicional" name="servicio">Manicure Tradicional</option>
                 <option value="pediTradicional" name="servicio">Pedicure Tradicional</option>
                 <option value="polish" name="servicio">Polichado</option>
                 <option value="semi" name="servicio">Esmaltado Semipermanente</option>
-                <option value=gel" name="servicio">Sistema en Gel</option>
+                <option value="gel" name="servicio">Sistema en Gel</option>
                 <option value="acrilico" name="servicio">Sistema en Acrilico</option>
-                <option value=dryPower" name="servicio">Dry Power</option>
+                <option value="dryPower" name="servicio">Dry Power</option>
                 <option value="barrido" name="servicio">Recubrimiento de uña naturales</option>
                 <option value="pediSemi" name="servicio">Pedicure Semipermanente</option>
                 <option value="mantenimiento" name="servicio">Mantenimiento</option>
                 <option value="polishgel" name="servicio">Tecnigel o Polishgel</option>
                 <option value="otro" name="servicio">Otro servicio</option>
             </select>
-            <h3>Seleccione forma de uñas naturales</h3>
+        </
+            <div id="actual">
+            <h3>Estado actual de las manos, dedos y uñas</h3>
+            <label value="manos"><input type="checkbox" name="actual"> Dedos Sanos</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Mano Sana</labe><br>
+            <label value="manos"><input type="checkbox" name="actual"> Uñas Sanas</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Dermatitis</label> <br>
+            <label value="manos"><input type="checkbox" name="actual"> Onicofagia</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Uñas Amarillas</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Infeccion por Bacterias</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Infeccion por estafilococos</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Psoriasis</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Hongos</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Golpes</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Estriaciones
+            Longitudinales</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Estriaciones
+            transversales</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Uñas Debiles</label><br>
+            <label value="manos"><input type="checkbox" name="actual"> Otras</label><br>
         </div>
-        <div id= "formas">
-            <input  type="radio" name="servicio">Redondas</label>
-        <input  type="radio" name="servicio">Cuadradas</label>
-        <input  type="radio" name="servicio">Almendras</label>
-        <input  type="radio" name="servicio">Ovaladas</label>
-        </div>
-        
+        <h3>Descripciones:</h3>
+        <input type="text" id="name" placeholder="Observaciones"><br>
+        <button id="btn" type="submit">Agregar</button><br>
+  </form>
+  
 
-        <h3>Estado actual de Mano, dedos y uñas</h3>
-        <div id= "actual">
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Dedos Sanos</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Mano Sana</labe>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Uñas Sanas</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Dermatitis</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Onicofagia</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Uñas Amarillas</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Infeccion por Bacterias</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Infeccion por
-            estafilococos</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Psoriasis</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Hongos</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Golpes</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Estriaciones
-            Longitudinales</label>
-            <label value="actual"></label>><input  type="checkbox" name="actual"> Estriaciones
-            transversales</label>
-            <label value="actual"></label>><input type="checkbox" name="actual"> Uñas Debiles</label>
-            <label value="actual"></label>><input type="checkbox" name="actual"> Otras</label>
-        </div>
-        
+  <div class="otro_formulario">
+    <div id="formas">
+        <h3>Seleccione forma de uñas naturales</h3> <br>
+        <input type="radio" value="name" name="servicio">Redondas</label><br>
+        <input type="radio"  value="name" name="servicio">Cuadradas</label><br>
+        <input type="radio" value="name" name="servicio">Almendras</label><br>
+        <input type="radio" value="name"  name="servicio">Ovaladas</label><br>
+    </div>
+ 
+        <h3>Observaciones y descripciones adicionales:</h3>
+        <input type="text" id="name" placeholder="Ingrese Observaciones"><br>
+        <button id="btn" type="submit">Agregar</button><br>
+   </div>
 
-        <label for="" id="obser">Obserbaciones y Descripciones Adicionales:</label>
-        <input type="text" id="name">
 
-        <button type="submit">Submit</button>
-    </form>
 
 </body>
 
